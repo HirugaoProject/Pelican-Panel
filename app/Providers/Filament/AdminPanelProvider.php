@@ -19,7 +19,7 @@ class AdminPanelProvider extends PanelProvider
         $panel = parent::panel($panel)
             ->id('admin')
             ->path('admin')
-            ->homeUrl('/')
+            ->homeUrl('/admin')
             ->breadcrumbs(false)
             ->sidebarCollapsibleOnDesktop(fn () => !$panel->hasTopNavigation())
             ->userMenuItems([
