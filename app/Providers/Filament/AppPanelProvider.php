@@ -16,6 +16,7 @@ class AppPanelProvider extends PanelProvider
         $panel = parent::panel($panel)
             ->id('app')
             ->default()
+            ->homeUrl('/admin')
             ->breadcrumbs(false)
             ->navigation(false)
             ->topbar(true)
